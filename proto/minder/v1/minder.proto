@@ -3651,6 +3651,7 @@ message ProviderClassInfo {
     ];
 
     // description is a short plaintext summary of the provider class.
+    // It must not contain markdown or other formatting, as it may be rendered in UIs.
     string description = 3;
 
     // supported_provider_types is the list of provider traits/interfaces supported by this class.

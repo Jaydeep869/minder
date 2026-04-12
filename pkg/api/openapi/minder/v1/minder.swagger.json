@@ -5720,7 +5720,7 @@
         },
         "description": {
           "type": "string",
-          "description": "description is a short plaintext summary of the provider class."
+          "description": "description is a short plaintext summary of the provider class.\nIt must not contain markdown or other formatting, as it may be rendered in UIs."
         },
         "supportedProviderTypes": {
           "type": "array",

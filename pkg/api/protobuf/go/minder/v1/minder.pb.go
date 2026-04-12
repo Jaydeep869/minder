@@ -10628,6 +10628,7 @@ type ProviderClassInfo struct {
 	// display_name is a human-friendly provider class name.
 	DisplayName string `protobuf:"bytes,2,opt,name=display_name,json=displayName,proto3" json:"display_name,omitempty"`
 	// description is a short plaintext summary of the provider class.
+	// It must not contain markdown or other formatting, as it may be rendered in UIs.
 	Description string `protobuf:"bytes,3,opt,name=description,proto3" json:"description,omitempty"`
 	// supported_provider_types is the list of provider traits/interfaces supported by this class.
 	SupportedProviderTypes []ProviderType `protobuf:"varint,4,rep,packed,name=supported_provider_types,json=supportedProviderTypes,proto3,enum=minder.v1.ProviderType" json:"supported_provider_types,omitempty"`
